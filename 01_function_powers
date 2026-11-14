@@ -1,0 +1,20 @@
+#include <stdio.h>
+// function to calculate a raised to b (b >= 0)
+long long power(int a, int b) {
+ long long result = 1;
+ int i;
+ for (i = 1; i <= b; i++)
+ result = result * a;
+return result;
+}
+int main() {
+ int a, b;
+ printf("Enter base (a) and exponent (b): ");
+ scanf("%d %d", &a, &b);
+ if (b < 0) {
+ printf("Please enter a non-negative exponent.\n");    
+ return 0;
+ }
+ printf("%d raised to %d = %lld\n", a, b, power(a, b));
+ return 0;
+}
