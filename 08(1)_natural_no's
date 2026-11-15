@@ -1,0 +1,11 @@
+#include <stdio.h>
+void printNatural(int i) {
+if (i > 10)
+return;
+printf("%d\n", i);
+printNatural(i + 1);
+}
+int main() {
+printNatural(1);
+return 0;
+}
