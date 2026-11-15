@@ -1,0 +1,19 @@
+#include <stdio.h>
+float readSum(int count) {
+float x;
+if (count == 0)
+return 0;
+scanf("%f", &x);
+return x + readSum(count - 1);
+}
+int main() {
+int n;
+float sum;
+printf("How many values? ");
+scanf("%d", &n);
+printf("Enter %d values:\n", n);
+sum = readSum(n);
+printf("Sum = %.2f\n", sum);
+printf("Mean = %.2f\n", sum / n);
+return 0;
+}
