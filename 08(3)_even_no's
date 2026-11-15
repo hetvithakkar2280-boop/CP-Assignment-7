@@ -1,0 +1,11 @@
+#include <stdio.h>
+void printEven(int x) {
+if (x > 20)
+return;
+printf("%d\n", x);
+printEven(x + 2);
+}
+int main() {
+printEven(2);
+return 0;
+}
