@@ -1,0 +1,11 @@
+#include <stdio.h>
+void printName(int times) {
+if (times == 0)
+return;
+printf("hetvi\n"); 
+printName(times - 1);
+}
+int main() {
+printName(5);
+return 0;
+}
