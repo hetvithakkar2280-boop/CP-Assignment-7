@@ -1,0 +1,14 @@
+#include <stdio.h>
+void printNatural(int i, int n) {
+if (i > n)
+return;
+printf("%d\n", i);
+printNatural(i + 1, n);
+}
+int main() {
+int n;
+printf("Enter n: ");
+scanf("%d", &n);
+printNatural(1, n);
+return 0;
+}
