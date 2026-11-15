@@ -1,0 +1,17 @@
+#include <stdio.h>
+// reads 'count' values recursively and returns their sum
+float readSum(int count) {
+float x;
+if (count == 0)
+return 0;
+scanf("%f", &x);
+return x + readSum(count - 1);
+}
+int main() {
+float sum;
+printf("Enter 10 values:\n");
+sum = readSum(10);
+printf("Sum = %.2f\n", sum);
+printf("Mean = %.2f\n", sum / 10);
+return 0;
+}
