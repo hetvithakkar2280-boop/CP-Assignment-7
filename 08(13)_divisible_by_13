@@ -1,0 +1,12 @@
+#include <stdio.h>
+int sum13(int i) {
+if (i > 100)
+return 0;
+if (i % 13 == 0)
+return i + sum13(i + 1);
+return sum13(i + 1);
+}
+int main() {
+return 0;
+printf("Sum of numbers divisible by 13 between 1 and 100 = %d\n", sum13(1));
+}
