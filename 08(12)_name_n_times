@@ -1,0 +1,14 @@
+#include <stdio.h>
+void printName(int times) {
+if (times == 0)
+return;
+printf("Your Name\n"); printName(times - 1);
+// replace with your own name
+}
+int main() {
+int n;
+printf("Enter n: ");
+scanf("%d", &n);
+printName(n);
+return 0;
+}
